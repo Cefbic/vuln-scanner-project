@@ -27,9 +27,11 @@ The MariaDB CLI was accessed with root privileges. I created the DVWA database w
 ![Scanner Running](images/DVWA%204.jpg)
 
 the web app is ready to be tested
+
 ![Scanner Running](images/DVWA.jpg)
 
 we can see the command to run the tool named as securetask.py written in Python, the following IP address is the one of the vulnerable website
+
 ![Scanner Running](images/Running%20Command.jpg)
 
 This is the first screen what the user will get after running the tool, it shows the name, the available and unavailable tools
