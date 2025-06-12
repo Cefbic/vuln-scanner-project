@@ -17,6 +17,7 @@ I viewed the contents of the config.inc.php file using cat. The file contains co
 ![Scanner Running](images/DVWA%202.jpg)
 
 Here, the MariaDB service is started using sudo service mariadb start. This is an essential step to ensure the web application can communicate with the database
+
 ![Scanner Running](images/DVWA%203.jpg)
 
 the apache2 web server is started This is an essential step to ensure the web app is running
