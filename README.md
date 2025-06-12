@@ -11,6 +11,6 @@ The goal of this project was to:
 
 ## 📸 Setup
 the process of cloning the DVWA repository from GitHub into the /var/www/html directory using git clone. After the cloning, I navigated into the DVWA directory and attempted to copy the configuration file using sudo
-![Scanner Running](images/DVWA%2011.jpg)
+![Scanner Running](images/DVWA%201.jpg)
 
 
