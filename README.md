@@ -59,7 +59,9 @@ The standard vulnerability management lifecycle includes five phases:
   <img src="images/DVWA%202.jpg" alt="DVWA Step 2" width="70%" />
 </p>  
 
-<!-- DVWA3 intentionally left out -->  
+<p align="center">
+  <img src="images/DVWA%203.jpg" alt="DVWA Step 2" width="70%" />
+</p>
 
 <p align="center">
   <img src="images/DVWA%204.jpg" alt="DVWA Step 4" width="70%" />
