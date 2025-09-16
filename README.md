@@ -12,7 +12,9 @@ This project was completed as part of my Master’s degree in Cybersecurity. It 
 - Run scans to detect vulnerabilities and generate a report  
 - Analyze findings to assess risk severity  
 
-![Scanner Running](images/Project_Chart.png)  
+<p align="center">
+  <img src="images/Project_Chart.png" alt="Scanner Running" width="70%" />
+</p>  
 
 ---
 
@@ -35,7 +37,9 @@ The standard vulnerability management lifecycle includes five phases:
 
 📌 *Future improvement:* Add prioritization (e.g., CVSS scoring) and remediation testing to complete the lifecycle.  
 
-![Lifecycle Diagram](images/Vulnerability_Management_Lifecycle.png)  
+<p align="center">
+  <img src="images/Vulnerability_Management_Lifecycle.png" alt="Vulnerability Management Lifecycle" width="70%" />
+</p>  
 
 ---
 
@@ -47,22 +51,48 @@ The standard vulnerability management lifecycle includes five phases:
    - Started **MariaDB** and **Apache2** services  
    - Created DVWA database with proper privileges  
 
-   ![Scanner Running](images/DVWA%201.jpg)  
-   ![Scanner Running](images/DVWA%202.jpg)  
-   ![Scanner Running](images/DVWA%203.jpg)  
-   ![Scanner Running](images/DVWA%204.jpg)  
-   ![Scanner Running](images/DVWA%205.jpg)  
-   ![Scanner Running](images/DVWA.jpg)  
+<p align="center">
+  <img src="images/DVWA%201.jpg" alt="DVWA Step 1" width="70%" />
+</p>  
+
+<p align="center">
+  <img src="images/DVWA%202.jpg" alt="DVWA Step 2" width="70%" />
+</p>  
+
+<!-- DVWA3 intentionally left out -->  
+
+<p align="center">
+  <img src="images/DVWA%204.jpg" alt="DVWA Step 4" width="70%" />
+</p>  
+
+<p align="center">
+  <img src="images/DVWA%205.jpg" alt="DVWA Step 5" width="70%" />
+</p>  
+
+<p align="center">
+  <img src="images/DVWA.jpg" alt="DVWA Running" width="70%" />
+</p>  
 
 2. **Scanner Execution**  
    - Launched custom Python scanner (`securetask.py`) targeting DVWA web server  
    - Provided feedback during execution (threat level, definitions, remediation hints)  
    - Generated summary reports of vulnerabilities detected vs. skipped  
 
-   ![Scanner Running](images/Running%20Command.jpg)  
-   ![Scanner Running](images/Scanner%20running.jpg)  
-   ![Scanner Running](images/Scanner%20feedback.jpg)  
-   ![Scanner Running](images/Scanner%20results.jpg)  
+<p align="center">
+  <img src="images/Running%20Command.jpg" alt="Running Command" width="70%" />
+</p>  
+
+<p align="center">
+  <img src="images/Scanner%20running.jpg" alt="Scanner Running" width="70%" />
+</p>  
+
+<p align="center">
+  <img src="images/Scanner%20feedback.jpg" alt="Scanner Feedback" width="70%" />
+</p>  
+
+<p align="center">
+  <img src="images/Scanner%20results.jpg" alt="Scanner Results" width="70%" />
+</p>  
 
 ---
 
@@ -83,19 +113,4 @@ The standard vulnerability management lifecycle includes five phases:
   - Linux administration (Apache2, MariaDB)  
   - Vulnerability scanning tools & reporting  
   - Web application security testing using DVWA  
-- Foundation for extending to prioritization (CVSS) and remediation testing  
-
----
-
-## 📂 Repository Structure  
-
-- `/images` → Supporting screenshots  
-- `securetask.py` → Vulnerability scanner script  
-- `README.md` → Project documentation  
-
----
-
-## 🔗 References  
-
-- [Damn Vulnerable Web Application (DVWA)](https://github.com/digininja/DVWA)  
-- Vulnerability Management lifecycle best practices (NIST, CIS)  
+- Foundation for extending to prioritization (CVSS) and
