@@ -9,7 +9,7 @@ The goal of this project was to:
 - Run scans to detect vulnerabilities and generate detailed reports
 - Analyze risk severity
 
-![Scanner Running](images/Project_Chart%201.png)
+![Scanner Running](images/Project_Chart.png)
   
 ## 📸 Setup
 the process of cloning the DVWA repository from GitHub into the /var/www/html directory using git clone. After the cloning, I navigated into the DVWA directory and attempted to copy the configuration file using sudo
