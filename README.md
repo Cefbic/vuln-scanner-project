@@ -1,54 +1,95 @@
-# vuln-scanner-project
-This project was a part of my Master's degree in Cybersecurity. It focuses on vulnerability assessment using an open-source GitHub vulnerability scanner, which was modified and tested in a controlled lab environment.
+# 🔎 Vulnerability Scanner Project  
 
-## 🔧 Project Overview
+This project was completed as part of my Master’s degree in Cybersecurity. It demonstrates a vulnerability assessment workflow using a customized open-source Python scanner tested against a deliberately vulnerable web application (DVWA) in a controlled lab environment.  
 
-The goal of this project was to:
-- Deploy a vulnerable web application on for testing
-- Customize and enhance an open-source vulnerability scanner
-- Run scans to detect vulnerabilities and generate detailed reports
-- Analyze risk severity
+---
 
-![Scanner Running](images/Project_Chart.png)
-  
-## 📸 Setup
-the process of cloning the DVWA repository from GitHub into the /var/www/html directory using git clone. After the cloning, I navigated into the DVWA directory and attempted to copy the configuration file using sudo
+## 🔧 Project Overview  
 
-![Scanner Running](images/DVWA%201.jpg)
+**Objectives:**  
+- Deploy a vulnerable web application for security testing  
+- Customize and enhance an open-source vulnerability scanner  
+- Run scans to detect vulnerabilities and generate a report
+- Analyze findings to assess risk severity  
 
-I viewed the contents of the config.inc.php file using cat. The file contains configuration variables for connecting DVWA to MariaDB) database, including server,database name,username, and password.
+---
 
-![Scanner Running](images/DVWA%202.jpg)
+## 🔄 Vulnerability Management Lifecycle (Project Context)  
 
-Here, the MariaDB service is started using sudo service mariadb start. This is an essential step to ensure the web application can communicate with the database
+The standard vulnerability management lifecycle includes five phases:  
 
-![Scanner Running](images/DVWA%203.jpg)
+1. **Discover** – Identify assets and vulnerabilities  
+2. **Assess** – Analyze and validate findings  
+3. **Prioritize** – Rank vulnerabilities by severity and impact  
+4. **Report** – Communicate findings to stakeholders  
+5. **Remediate** – Apply fixes and mitigations  
 
-the apache2 web server is started This is an essential step to ensure the web app is running
+**Implemented in this project:**  
+- ✅ **Discover:** Deployed DVWA and scanned with a Python-based scanner  
+- ✅ **Assess:** Analyzed detected vulnerabilities from scan results  
+- ⚠️ **Prioritize:** Not fully covered (no CVSS scoring or asset criticality ranking)  
+- ✅ **Report:** Generated automated reports via the scanner  
+- ❌ **Remediate:** Not in scope (no patches or configuration changes applied)  
 
-![Scanner Running](images/DVWA%205.jpg)
+📌 *Future improvement:* Add prioritization (e.g., CVSS scoring) and remediation testing to complete the lifecycle.  
 
-The MariaDB CLI was accessed with root privileges. I created the DVWA database with the appropriate privileges and access credentials defined in the earlier config file.
+![Lifecycle Diagram](images/vulnerability_Management_Lifecycle.png)  
 
-![Scanner Running](images/DVWA%204.jpg)
+---
 
-the web app is ready to be tested
+## 🖥️ Lab Setup  
 
-![Scanner Running](images/DVWA.jpg)
+1. **DVWA Deployment**  
+   - Cloned DVWA repository into `/var/www/html` using `git clone`  
+   - Configured `config.inc.php` with MariaDB connection details  
+   - Started **MariaDB** and **Apache2** services  
+   - Created DVWA database with proper privileges  
 
-we can see the command to run the tool named as securetask.py written in Python, the following IP address is the one of the vulnerable website
+   ![DVWA Setup](images/DVWA.jpg)  
 
-![Scanner Running](images/Running%20Command.jpg)
+2. **Scanner Execution**  
+   - Launched custom Python scanner (`securetask.py`) targeting DVWA web server  
+   - Provided feedback during execution (threat level, definitions, remediation hints)  
+   - Generated summary reports of vulnerabilities detected vs. skipped  
 
-This is the first screen what the user will get after running the tool, it shows the name, the available and unavailable tools
+   ![Scanner Running](images/Scanner_running.jpg)  
+   ![Scanner Results](images/Scanner_results.jpg)  
 
-![Scanner Running](images/Scanner%20running.jpg)
+---
 
-Inside The tool running, this is feedback while it runs, basically it will show Threat level, Definition, Remediation
+## 📊 Results  
 
-![Scanner Running](images/Scanner%20feedback.jpg)
+- Successfully identified multiple vulnerabilities in the DVWA test environment  
+- Scanner output included:  
+  - Threat level classification  
+  - Suggested remediation steps  
+  - Summary report of findings  
 
+![Report Output](images/Scanner_feedback.jpg)  
 
-Finally, here you’ll get feedback or rather a brief report on what are the findings and how many vulnerabilities were being checked and skipped also detected.
+---
 
-![Scanner Running](images/Scanner%20results.jpg)
+## 🚀 Key Takeaways  
+
+- Hands-on experience with the **vulnerability management lifecycle**  
+- Practical exposure to:  
+  - Linux administration (Apache2, MariaDB)  
+  - Vulnerability scanning tools & reporting  
+  - Web application security testing using DVWA  
+- Foundation for extending to prioritization (CVSS) and remediation testing  
+
+---
+
+## 📂 Repository Structure  
+
+- `/images` → Supporting screenshots  
+- `securetask.py` → Vulnerability scanner script  
+- `README.md` → Project documentation  
+
+---
+
+## 🔗 References  
+
+- [Damn Vulnerable Web Application (DVWA)](https://github.com/digininja/DVWA)  
+- Vulnerability Management lifecycle best practices (NIST, CIS)  
+
