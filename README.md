@@ -9,8 +9,10 @@ This project was completed as part of my Master’s degree in Cybersecurity. It 
 **Objectives:**  
 - Deploy a vulnerable web application for security testing  
 - Customize and enhance an open-source vulnerability scanner  
-- Run scans to detect vulnerabilities and generate a report
+- Run scans to detect vulnerabilities and generate a report  
 - Analyze findings to assess risk severity  
+
+![Scanner Running](images/Project_Chart.png)  
 
 ---
 
@@ -33,7 +35,7 @@ The standard vulnerability management lifecycle includes five phases:
 
 📌 *Future improvement:* Add prioritization (e.g., CVSS scoring) and remediation testing to complete the lifecycle.  
 
-![Lifecycle Diagram](images/vulnerability_Management_Lifecycle.png)  
+![Lifecycle Diagram](images/Vulnerability_Management_Lifecycle.png)  
 
 ---
 
@@ -45,15 +47,22 @@ The standard vulnerability management lifecycle includes five phases:
    - Started **MariaDB** and **Apache2** services  
    - Created DVWA database with proper privileges  
 
-   ![DVWA Setup](images/DVWA.jpg)  
+   ![Scanner Running](images/DVWA%201.jpg)  
+   ![Scanner Running](images/DVWA%202.jpg)  
+   ![Scanner Running](images/DVWA%203.jpg)  
+   ![Scanner Running](images/DVWA%204.jpg)  
+   ![Scanner Running](images/DVWA%205.jpg)  
+   ![Scanner Running](images/DVWA.jpg)  
 
 2. **Scanner Execution**  
    - Launched custom Python scanner (`securetask.py`) targeting DVWA web server  
    - Provided feedback during execution (threat level, definitions, remediation hints)  
    - Generated summary reports of vulnerabilities detected vs. skipped  
 
-   ![Scanner Running](images/Scanner_running.jpg)  
-   ![Scanner Results](images/Scanner_results.jpg)  
+   ![Scanner Running](images/Running%20Command.jpg)  
+   ![Scanner Running](images/Scanner%20running.jpg)  
+   ![Scanner Running](images/Scanner%20feedback.jpg)  
+   ![Scanner Running](images/Scanner%20results.jpg)  
 
 ---
 
@@ -64,8 +73,6 @@ The standard vulnerability management lifecycle includes five phases:
   - Threat level classification  
   - Suggested remediation steps  
   - Summary report of findings  
-
-![Report Output](images/Scanner_feedback.jpg)  
 
 ---
 
@@ -92,4 +99,3 @@ The standard vulnerability management lifecycle includes five phases:
 
 - [Damn Vulnerable Web Application (DVWA)](https://github.com/digininja/DVWA)  
 - Vulnerability Management lifecycle best practices (NIST, CIS)  
-
