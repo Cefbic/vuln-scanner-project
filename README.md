@@ -4,11 +4,11 @@ This project was a part of my Master's degree in Cybersecurity. It focuses on vu
 ## 🔧 Project Overview
 
 The goal of this project was to:
-- Customize and enhance an open-source vulnerability scanner
 - Deploy a vulnerable web application on for testing
+- Customize and enhance an open-source vulnerability scanner
 - Run scans to detect vulnerabilities and generate detailed reports
-- Analyze risk severity and recommend mitigations
-
+- Analyze risk severity
+  
 ## 📸 Setup
 the process of cloning the DVWA repository from GitHub into the /var/www/html directory using git clone. After the cloning, I navigated into the DVWA directory and attempted to copy the configuration file using sudo
 
